@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    align-items: center; /* Vertically centers the logo and images */
+    padding: 10px 20px;
+    background-color: #c0bfbf;
+}
+
+.right-images {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: auto; /* This is the key. It pushes this div and its contents to the right. */
+}
+
+.logo img{
+    width: 10rem;
+    height: auto;
+}
+
+/* Optional: Basic styling for the images */
+header img {
+    height: 40px;
+    border-radius: 50%;
+}
+
+#main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1em;
+    background-color: #d9d9d9;
+}
+
+.add{
+    background-color: rgb(7, 187, 7);
+    border-color: rgb(7, 187, 7);
+}
+
+#world{
+    width: 80vw;
+    height: 40vw;
+    background-color: white;
+}
+
+#footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.stop{
+    background-color: rgb(228, 49, 49);
+    color: rgb(48, 48, 48);
+    border-color: rgb(228, 49, 49);
+    padding: 3px;
+    border-radius: 5px;
+}
+
+#add-input{
+    height: 2em;
+    width: 10em;
+}
+
+.organism{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.organism p{
+    background-color: white;
+    padding: 5px;
+    margin: 5px;
+}
+
+.settings{
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+}
+
+.props{
+    display: flex;
+    flex-direction: column;
+    background-color: #d9d9d9;
+    width: fit-content;
+    margin: 5px;
+    padding: 5px;
+}
+
+.props p.name{
+    background-color: rgb(18, 209, 18);
+}
+
+.props p.rank{
+    background-color: rgb(255, 56, 56);
+}
+
+.props p{
+    margin-bottom: 2px;
+}
+
+#params_adjust {
+    display: flex;
+    flex-direction: row;
+}
+
+.start{
+    background-color: rgb(7, 187, 7);
+    color: rgb(48, 48, 48);
+    border-color: rgb(7, 187, 7);
+    padding: 3px;
+    border-radius: 5px;
+}
+
+#result{
+    width: 80vw;
+    height: 40vw;
+}
+
+@media only screen and (max-width: 600px) {
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1%;
+    }
+
+    .logo img{
+        width: 50%;
+        height: auto;
+    }
+
+    .right-images{
+        display: flex;
+        flex-direction: row;
+        margin:0;
+    }
+
+    .right-images img{
+        width: 5vw;
+        height: auto;
+    }
+
+    #main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #controls{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #params_adjust{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+}
